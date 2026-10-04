@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta property="og:title" content="「視座を上げろ」の正体">
+  <meta property="og:description" content="視座を「課題の抽象度」として捉え、いかにの階段・ちまちまとふわふわの往復・言われたときの返し方を図解します。">
+  <meta property="og:type" content="article">
+  <title>「視座を上げろ」の正体</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%232BA0E2'/><stop offset='1' stop-color='%2337AABA'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><rect x='24' y='30' width='52' height='34' rx='5' fill='%23FFFFFF'/><rect x='32' y='39' width='26' height='4' rx='2' fill='%232BA0E2'/><rect x='32' y='48' width='36' height='4' rx='2' fill='%2337AABA'/><rect x='42' y='68' width='16' height='4' rx='2' fill='%23FFFFFF'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            smo: {
+              bg: '#F8F8F9',
+              surface: '#FFFFFF',
+              band: '#EBF1F8',
+              soft: '#E2EBEF',
+              border: '#E6E6E6',
+              accent: '#2BA0E2',
+              teal: '#37AABA',
+              navy: '#00314E',
+              text: '#333333',
+              muted: '#555555',
+              dim: '#767F88',
+              positive: '#2E9E79',
+              negative: '#E2685E',
+              warning: '#E8A33D',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', '"Hiragino Sans"', '"Hiragino Kaku Gothic ProN"', '"Yu Gothic UI"', '"Meiryo"', 'sans-serif'],
+            display: ['"Raleway"', '"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { border-top: none !important; }
+      .rounded-xl { break-inside: avoid; }
+      .md\:flex-row { flex-direction: row !important; }
+      .md\:hidden { display: none !important; }
+      .hidden.md\:block { display: block !important; }
+      .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+      .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+      .md\:mb-20 { margin-bottom: 5rem !important; }
+      .md\:py-16 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+      .bg-clip-text.text-transparent {
+        -webkit-background-clip: initial !important;
+        background-clip: initial !important;
+        color: #2BA0E2 !important;
+        -webkit-text-fill-color: #2BA0E2 !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-smo-bg text-smo-text antialiased leading-relaxed">
+  <header class="bg-white border-b border-smo-border">
+    <div class="no-print max-w-6xl mx-auto px-5 h-14 flex items-center justify-end">
+      <button onclick="window.print()" class="flex items-center gap-1.5 text-xs text-smo-muted hover:text-smo-accent transition-colors cursor-pointer">
+        <i data-lucide="download" class="w-3.5 h-3.5"></i>
+        PDF
+      </button>
+    </div>
+  </header>
+  <div class="h-1.5 bg-gradient-to-r from-smo-accent to-smo-teal"></div>
+  <main class="max-w-6xl mx-auto px-5 py-12 md:py-16">
+<!-- CONTENT_START -->
+
+<!-- ============================================================ -->
+<!--  HERO                                                        -->
+<!-- ============================================================ -->
+<div class="text-center mb-10 md:mb-14">
+  <p class="inline-block text-xs font-bold text-smo-accent bg-smo-band rounded-full px-4 py-1.5 mb-5">仕事の考え方</p>
+  <h1 class="text-3xl md:text-5xl font-bold text-smo-navy leading-snug mb-5">「視座を上げろ」の正体</h1>
+  <div class="w-20 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto mb-6"></div>
+  <p class="text-base text-smo-muted max-w-2xl mx-auto leading-relaxed">
+    上司から「もっと視座を上げろ」と言われる。<br>
+    でも、そもそも視座って何なのか。ひとことで言うと ──
+  </p>
+</div>
+
+
+<!-- ============================================================ -->
+<!--  ONE-PAGE SUMMARY                                             -->
+<!-- ============================================================ -->
+<div class="bg-smo-surface border border-smo-border rounded-2xl p-6 md:p-10 mb-6">
+  <div class="text-center mb-8 md:mb-10">
+    <p class="text-sm font-bold text-smo-muted mb-3">＼ ひとことで言うと ／</p>
+    <p class="text-xl md:text-2xl font-bold text-smo-navy mb-2">
+      視座 = その人が解こうとしている<span class="text-smo-accent">「課題の抽象度」</span>の高さ
+    </p>
+    <p class="text-sm text-smo-muted">
+      同じ仕事を見ていても、どのレイヤーの課題として捉えるかで、見えるものが変わる
+    </p>
+  </div>
+
+  <!-- Core: 同じ仕事を3つのレイヤーで見る -->
+  <div class="max-w-3xl mx-auto mb-8">
+    <div class="flex flex-col md:flex-row items-stretch gap-4">
+      <!-- 同じ仕事 -->
+      <div class="md:w-48 flex flex-col items-center justify-center bg-smo-bg border border-smo-border rounded-xl p-5 text-center">
+        <div class="w-14 h-14 rounded-xl bg-smo-accent/10 border border-smo-accent/20 flex items-center justify-center mb-2.5">
+          <i data-lucide="briefcase" class="w-7 h-7 text-smo-navy"></i>
+        </div>
+        <div class="font-bold text-smo-text text-sm">同じひとつの仕事</div>
+        <div class="text-[11px] text-smo-muted mt-1">例：リスティング広告の運用</div>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <i data-lucide="arrow-right" class="w-5 h-5 text-smo-navy hidden md:block"></i>
+        <i data-lucide="arrow-down" class="w-5 h-5 text-smo-navy md:hidden"></i>
+      </div>
+
+      <!-- 3レイヤー -->
+      <div class="flex-1 space-y-2">
+        <div class="flex items-center gap-3 bg-smo-navy text-white rounded-xl px-4 py-3">
+          <i data-lucide="building-2" class="w-5 h-5 flex-shrink-0"></i>
+          <div>
+            <div class="font-bold text-sm">経営レイヤーで見る</div>
+            <div class="text-[11px] text-white/80">会社として、長く利益を生み続けるには？</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 bg-smo-teal text-white rounded-xl px-4 py-3 md:ml-6">
+          <i data-lucide="users" class="w-5 h-5 flex-shrink-0"></i>
+          <div>
+            <div class="font-bold text-sm">マネジメントレイヤーで見る</div>
+            <div class="text-[11px] text-white/85">部署全体のミッションをどう達成する？</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 bg-smo-accent text-white rounded-xl px-4 py-3 md:ml-12">
+          <i data-lucide="mouse-pointer-click" class="w-5 h-5 flex-shrink-0"></i>
+          <div>
+            <div class="font-bold text-sm">目の前の作業として見る</div>
+            <div class="text-[11px] text-white/85">この広告の成果をどう良くする？</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center mt-4">
+      <div class="flex items-center gap-2 text-xs text-smo-navy bg-smo-band rounded-full px-4 py-1.5">
+        <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+        この「縦の高さ」が視座
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-sm font-bold text-smo-muted mb-5">＼ この図解でわかること ／</p>
+
+  <div class="flex flex-wrap justify-center gap-2">
+    <div class="flex items-center gap-1.5 bg-white border border-smo-border rounded-full px-3.5 py-1.5 text-xs text-smo-text">
+      <i data-lucide="target" class="w-3.5 h-3.5 text-smo-accent"></i>
+      「課題」の定義
+    </div>
+    <div class="flex items-center gap-1.5 bg-white border border-smo-border rounded-full px-3.5 py-1.5 text-xs text-smo-text">
+      <i data-lucide="trending-up" class="w-3.5 h-3.5 text-smo-teal"></i>
+      視座が上がっていく仕組み
+    </div>
+    <div class="flex items-center gap-1.5 bg-white border border-smo-border rounded-full px-3.5 py-1.5 text-xs text-smo-text">
+      <i data-lucide="repeat" class="w-3.5 h-3.5 text-smo-navy"></i>
+      ちまちまとふわふわの往復
+    </div>
+    <div class="flex items-center gap-1.5 bg-white border border-smo-border rounded-full px-3.5 py-1.5 text-xs text-smo-text">
+      <i data-lucide="message-circle" class="w-3.5 h-3.5 text-smo-accent"></i>
+      言われたときの返し方
+    </div>
+  </div>
+</div>
+
+<p class="text-center text-smo-muted mb-16 md:mb-20">
+  ここから先で、この考え方をひとつずつ丁寧にほどいていきます。
+</p>
+
+
+<!-- ============================================================ -->
+<!--  SECTION 1: どんな場面で言われるか                            -->
+<!-- ============================================================ -->
+<section class="mb-16 md:mb-20">
+  <div class="text-center mb-10">
+    <p class="font-display text-sm font-bold text-smo-accent tracking-[0.25em] mb-2">01</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-smo-navy leading-snug mb-4">「視座が低い」と言われるのはこんなとき</h2>
+    <div class="w-16 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto"></div>
+  </div>
+
+  <p class="mb-8 leading-relaxed">
+    たとえば上司から「AIを使って業務を改善してほしい」と頼まれた場面。報告した側は改善したつもりでも、上司が期待していたのは、まったく別の高さの話だった ── というすれ違いが起きます。
+  </p>
+
+  <!-- チャットUI -->
+  <div class="max-w-2xl mx-auto bg-smo-surface border border-smo-border rounded-xl overflow-hidden mb-8">
+    <div class="flex items-center gap-2 bg-smo-band px-4 py-2.5 border-b border-smo-border">
+      <i data-lucide="hash" class="w-3.5 h-3.5 text-smo-navy"></i>
+      <span class="text-xs font-bold text-smo-navy">業務改善の報告</span>
+    </div>
+    <div class="p-5 space-y-3">
+      <div class="flex">
+        <div class="max-w-[85%] bg-smo-bg border border-smo-border rounded-2xl rounded-bl-sm px-4 py-2 text-sm">
+          <div class="text-[10px] text-smo-dim mb-0.5">上司</div>
+          AIを使って業務を改善してほしい。
+        </div>
+      </div>
+      <div class="flex justify-end">
+        <div class="max-w-[85%] bg-smo-band rounded-2xl rounded-br-sm px-4 py-2 text-sm">
+          <div class="text-[10px] text-smo-dim mb-0.5 text-right">あなた</div>
+          自分の作業を、AIでできるようにしました！
+        </div>
+      </div>
+      <div class="flex">
+        <div class="max-w-[85%] bg-smo-bg border border-smo-border rounded-2xl rounded-bl-sm px-4 py-2 text-sm">
+          <div class="text-[10px] text-smo-dim mb-0.5">上司</div>
+          そういうことじゃなくて。部署全体のミッション、いまかかっている人件費、経営からの要請を捉えて、あるべき姿にどうステップを登っていくかで考えてほしいんだよ。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="bg-smo-accent/10 border border-smo-accent/20 rounded-xl p-5">
+      <div class="text-xs font-bold text-smo-accent mb-2">あなたが解いていた課題</div>
+      <p class="font-bold text-smo-navy">いかに<span class="text-smo-accent">自分の作業</span>を効率化するか？</p>
+    </div>
+    <div class="bg-smo-navy/10 border border-smo-navy/20 rounded-xl p-5">
+      <div class="text-xs font-bold text-smo-navy mb-2">上司が期待していた課題</div>
+      <p class="font-bold text-smo-navy">いかに<span class="text-smo-teal">部署全体</span>を、あるべき姿に近づけるか？</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!--  SECTION 2: 課題とは何か                                       -->
+<!-- ============================================================ -->
+<section class="mb-16 md:mb-20">
+  <div class="text-center mb-10">
+    <p class="font-display text-sm font-bold text-smo-accent tracking-[0.25em] mb-2">02</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-smo-navy leading-snug mb-4">そもそも「課題」とは何か</h2>
+    <div class="w-16 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto"></div>
+  </div>
+
+  <p class="mb-8 leading-relaxed">
+    視座を「課題の抽象度」と捉えるなら、まず「課題」という言葉をはっきりさせておく必要があります。課題は人によって意味がぶれやすい言葉ですが、ここでは次のように定義します。
+  </p>
+
+  <!-- ギャップ図 -->
+  <div class="bg-smo-surface border border-smo-border rounded-xl p-6 md:p-8 mb-8">
+    <h3 class="text-lg font-bold text-smo-text text-center mb-8">課題 = ギャップを埋めるための論点</h3>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
+      <div class="w-48 bg-smo-bg border border-smo-border rounded-xl p-5 text-center">
+        <i data-lucide="map-pin" class="w-6 h-6 text-smo-dim mx-auto mb-2"></i>
+        <div class="font-bold text-smo-navy">現状</div>
+        <div class="text-xs text-smo-muted mt-1">いま、こうなっている</div>
+      </div>
+
+      <div class="flex flex-col items-center md:w-56 py-2 md:py-0 px-2">
+        <div class="bg-gradient-to-r from-smo-accent to-smo-teal text-white rounded-xl px-4 py-3 text-center w-full">
+          <div class="text-[10px] text-white/80 mb-0.5">課題（論点）</div>
+          <div class="font-bold text-sm">いかに〇〇するか？</div>
+        </div>
+        <div class="flex items-center gap-1 mt-2 text-[10px] text-smo-muted">
+          <i data-lucide="move-horizontal" class="w-4 h-4 text-smo-navy hidden md:block"></i>
+          <i data-lucide="move-vertical" class="w-4 h-4 text-smo-navy md:hidden"></i>
+          ギャップを埋める
+        </div>
+      </div>
+
+      <div class="w-48 bg-smo-teal/15 border border-smo-teal/30 rounded-xl p-5 text-center">
+        <i data-lucide="flag" class="w-6 h-6 text-smo-positive mx-auto mb-2"></i>
+        <div class="font-bold text-smo-navy">ありたい姿<br>あるべき姿</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-smo-accent/5 border border-smo-accent/20 rounded-xl p-5">
+    <div class="flex items-start gap-3">
+      <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-smo-accent/10 flex-shrink-0 mt-0.5">
+        <i data-lucide="lightbulb" class="w-4 h-4 text-smo-accent"></i>
+      </div>
+      <div>
+        <p class="font-bold text-smo-accent mb-1">ここがポイント</p>
+        <p class="text-smo-muted leading-relaxed">
+          課題は必ず<strong class="text-smo-text">「いかに〇〇するか？」という問いの形</strong>で書きます。この形にそろえると、自分が今どの高さの問いに向き合っているのかが見えるようになります。以降、この問いを<strong class="text-smo-text">「いかに」</strong>と呼びます。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!--  SECTION 3: いかにの階段                                       -->
+<!-- ============================================================ -->
+<section class="mb-16 md:mb-20">
+  <div class="text-center mb-10">
+    <p class="font-display text-sm font-bold text-smo-accent tracking-[0.25em] mb-2">03</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-smo-navy leading-snug mb-4">視座は「いかにの階段」で上がっていく</h2>
+    <div class="w-16 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto"></div>
+  </div>
+
+  <p class="mb-8 leading-relaxed">
+    デジタル広告の仕事を例にすると、同じリスティング広告から出発しても、向き合う「いかに」は段階的に高くなっていきます。
+  </p>
+
+  <!-- 階段図 -->
+  <div class="bg-smo-surface border border-smo-border rounded-xl p-6 md:p-8 mb-8">
+    <h3 class="text-lg font-bold text-smo-text text-center mb-8">いかにの階段（デジタル広告の例）</h3>
+
+    <div class="max-w-3xl mx-auto space-y-2">
+      <div class="flex items-center gap-3 md:ml-[32%] bg-smo-navy text-white rounded-xl px-4 py-3">
+        <span class="font-display font-bold text-sm text-white/70 w-6">05</span>
+        <div>
+          <div class="font-bold text-sm">いかに長期的に利益を生み出し続けるか？</div>
+          <div class="text-[11px] text-white/75">ここまで来ると、まさに経営</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 md:ml-[24%] bg-smo-navy/85 text-white rounded-xl px-4 py-3">
+        <span class="font-display font-bold text-sm text-white/70 w-6">04</span>
+        <div>
+          <div class="font-bold text-sm">いかに売上を上げるか？</div>
+          <div class="text-[11px] text-white/75">プロモーションはマーケティング4Pのひとつにすぎない</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 md:ml-[16%] bg-smo-teal text-white rounded-xl px-4 py-3">
+        <span class="font-display font-bold text-sm text-white/70 w-6">03</span>
+        <div>
+          <div class="font-bold text-sm">いかにプロモーション全体の成果を最大化するか？</div>
+          <div class="text-[11px] text-white/85">デジタルに限らず、リアルやマス媒体も含めて</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 md:ml-[8%] bg-smo-teal/80 text-white rounded-xl px-4 py-3">
+        <span class="font-display font-bold text-sm text-white/70 w-6">02</span>
+        <div>
+          <div class="font-bold text-sm">いかにデジタルマーケティングの成果を上げるか？</div>
+          <div class="text-[11px] text-white/85">リスティングに限らず、デジタル全体へ</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 bg-smo-accent text-white rounded-xl px-4 py-3">
+        <span class="font-display font-bold text-sm text-white/70 w-6">01</span>
+        <div>
+          <div class="font-bold text-sm">いかにリスティング広告のCPAを下げるか？</div>
+          <div class="text-[11px] text-white/85">CPA＝顧客1件の獲得にかかった広告費</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="mb-8 leading-relaxed">
+    大事なのは、<strong class="text-smo-text">この階段は一足飛びには登れない</strong>ということです。CPAを下げることに向き合っている人が、突然「長期的に利益を生み続ける方法」を語り始めても説得力がありません。では、どうやって1段ずつ上がっていくのか。
+  </p>
+
+  <!-- レベルアップのサイクル -->
+  <div class="bg-smo-surface border border-smo-border rounded-xl p-6 md:p-8 mb-8">
+    <h3 class="text-lg font-bold text-smo-text text-center mb-8">1段上がるまでの流れ</h3>
+
+    <div class="flex flex-col md:flex-row items-stretch justify-center gap-3 md:gap-0">
+      <div class="flex-1 bg-smo-accent/10 border border-smo-accent/20 rounded-xl p-4 text-center">
+        <div class="w-8 h-8 rounded-full bg-smo-accent text-white text-sm font-bold flex items-center justify-center mx-auto mb-3">1</div>
+        <i data-lucide="crosshair" class="w-6 h-6 text-smo-navy mx-auto mb-2"></i>
+        <div class="font-bold text-smo-navy text-sm mb-1">目の前の「いかに」を解く</div>
+        <div class="text-xs text-smo-muted leading-relaxed">今求められている課題に<br>きちんと向き合う</div>
+      </div>
+      <div class="flex items-center justify-center md:w-10 py-1 md:py-0">
+        <i data-lucide="chevron-right" class="w-5 h-5 text-smo-dim hidden md:block"></i>
+        <i data-lucide="chevron-down" class="w-5 h-5 text-smo-dim md:hidden"></i>
+      </div>
+      <div class="flex-1 bg-smo-teal/15 border border-smo-teal/30 rounded-xl p-4 text-center">
+        <div class="w-8 h-8 rounded-full bg-smo-teal text-white text-sm font-bold flex items-center justify-center mx-auto mb-3">2</div>
+        <i data-lucide="wrench" class="w-6 h-6 text-smo-teal mx-auto mb-2"></i>
+        <div class="font-bold text-smo-navy text-sm mb-1">工夫して成果を出す</div>
+        <div class="text-xs text-smo-muted leading-relaxed">自分の身になる経験を<br>愚直に積む</div>
+      </div>
+      <div class="flex items-center justify-center md:w-10 py-1 md:py-0">
+        <i data-lucide="chevron-right" class="w-5 h-5 text-smo-dim hidden md:block"></i>
+        <i data-lucide="chevron-down" class="w-5 h-5 text-smo-dim md:hidden"></i>
+      </div>
+      <div class="flex-1 bg-smo-navy/10 border border-smo-navy/20 rounded-xl p-4 text-center">
+        <div class="w-8 h-8 rounded-full bg-smo-navy text-white text-sm font-bold flex items-center justify-center mx-auto mb-3">3</div>
+        <i data-lucide="sparkles" class="w-6 h-6 text-smo-navy mx-auto mb-2"></i>
+        <div class="font-bold text-smo-navy text-sm mb-1">ある瞬間に気づく</div>
+        <div class="text-xs text-smo-muted leading-relaxed">「これって単なる打ち手だな。<br>もっと本質から考えないと」</div>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-6">
+      <div class="flex items-center gap-2 text-xs text-white bg-gradient-to-r from-smo-accent to-smo-teal rounded-full px-4 py-1.5">
+        <i data-lucide="arrow-up-circle" class="w-3.5 h-3.5"></i>
+        この気づきの瞬間が「レベルアップ」。1つ上の「いかに」が見えてくる
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-smo-warning/5 border border-smo-warning/20 rounded-xl p-5">
+    <div class="flex items-start gap-3">
+      <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-smo-warning/10 flex-shrink-0 mt-0.5">
+        <i data-lucide="info" class="w-4 h-4 text-smo-warning"></i>
+      </div>
+      <div>
+        <p class="font-bold text-smo-warning mb-1">視座は、誰でも最初は低い</p>
+        <p class="text-smo-muted leading-relaxed text-sm">
+          人は生まれた瞬間、「お腹が減ったからどうミルクを飲むか」という課題しか持っていません。そこから上がる人は上がり、上がらない人は上がらない。到達している段が人によって違うので、<strong class="text-smo-text">比べたときに「相対的に低い」という差が生まれる</strong>のは自然なことです。上司から「視座が低い」と言われるのも、ある意味では当たり前のことなのです。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!--  SECTION 4: ちまちまの世界とふわふわの世界                     -->
+<!-- ============================================================ -->
+<section class="mb-16 md:mb-20">
+  <div class="text-center mb-10">
+    <p class="font-display text-sm font-bold text-smo-accent tracking-[0.25em] mb-2">04</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-smo-navy leading-snug mb-4">「ちまちまの世界」と「ふわふわの世界」</h2>
+    <div class="w-16 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto"></div>
+  </div>
+
+  <p class="mb-8 leading-relaxed">
+    いかにの階段を登ることは、ざっくり言えば<strong class="text-smo-text">2つの世界を行き来すること</strong>です。どちらか片方にとどまってしまうと、レベルアップは起きません。
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <!-- ちまちま -->
+    <div class="bg-smo-surface border border-smo-border rounded-xl overflow-hidden">
+      <div class="bg-smo-accent/10 px-5 py-4 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-smo-accent/15 flex items-center justify-center flex-shrink-0">
+          <i data-lucide="grid-3x3" class="w-5 h-5 text-smo-accent"></i>
+        </div>
+        <div>
+          <div class="font-bold text-smo-navy">ちまちまの世界</div>
+          <div class="text-xs text-smo-muted">具体・目の前の仕事</div>
+        </div>
+      </div>
+      <div class="p-5">
+        <div class="text-xs font-bold text-smo-dim mb-2">この世界にい続ける人</div>
+        <p class="text-sm leading-relaxed mb-3">上司がマーケティングの全体像を議論したいのに、「今日入れる広告のタイトルを、これからこれに変えたほうがいいと思う」とすぐ具体の話に戻ってしまう。</p>
+        <div class="text-xs text-smo-negative bg-smo-negative/5 rounded-lg px-3 py-2 mb-4">→「視座が低い」と言われやすい</div>
+        <div class="text-xs font-bold text-smo-positive mb-1">ただし、この世界は大事</div>
+        <p class="text-xs text-smo-muted leading-relaxed">今日の広告文をきちんと考えて回すことは欠かせない。ここが見えていないと何も始まらない。</p>
+      </div>
+    </div>
+
+    <!-- ふわふわ -->
+    <div class="bg-smo-surface border border-smo-border rounded-xl overflow-hidden">
+      <div class="bg-smo-teal/10 px-5 py-4 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-smo-teal/15 flex items-center justify-center flex-shrink-0">
+          <i data-lucide="cloud" class="w-5 h-5 text-smo-teal"></i>
+        </div>
+        <div>
+          <div class="font-bold text-smo-navy">ふわふわの世界</div>
+          <div class="text-xs text-smo-muted">抽象・まだ形になっていない未来</div>
+        </div>
+      </div>
+      <div class="p-5">
+        <div class="text-xs font-bold text-smo-dim mb-2">この世界にい続ける人</div>
+        <p class="text-sm leading-relaxed mb-3">CPAに向き合っている段階なのに、経営の本を読んで「うちの会社は戦略がなってない」と語ってしまう。経験していないので、人から借りた言葉しか使えない。</p>
+        <div class="text-xs text-smo-negative bg-smo-negative/5 rounded-lg px-3 py-2 mb-4">→ 頭でっかちで、わかった気になっている</div>
+        <div class="text-xs font-bold text-smo-positive mb-1">ただし、この世界も大事</div>
+        <p class="text-xs text-smo-muted leading-relaxed">ここが見えていないと、次の段を想像できずレベルアップしない。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 往復図 -->
+  <div class="bg-smo-band rounded-xl p-6 md:p-8 mb-8">
+    <p class="text-center text-sm font-bold text-smo-muted mb-6">＼ 必要なのは「両軸」で動くこと ／</p>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+      <div class="w-full md:w-64 bg-white rounded-xl p-4 text-center">
+        <div class="text-xs font-bold text-smo-accent mb-1">ちまちま側でやること</div>
+        <p class="text-sm font-bold text-smo-navy">目の前を愚直に頑張る</p>
+        <p class="text-xs text-smo-muted mt-1">今、自分に期待されている成果を出す</p>
+      </div>
+      <div class="flex flex-col items-center text-smo-navy">
+        <i data-lucide="arrow-left-right" class="w-6 h-6 hidden md:block"></i>
+        <i data-lucide="arrow-up-down" class="w-6 h-6 md:hidden"></i>
+        <span class="text-[10px] text-smo-muted mt-1">行き来する</span>
+      </div>
+      <div class="w-full md:w-64 bg-white rounded-xl p-4 text-center">
+        <div class="text-xs font-bold text-smo-teal mb-1">ふわふわ側でやること</div>
+        <p class="text-sm font-bold text-smo-navy">次の段を想像する</p>
+        <p class="text-xs text-smo-muted mt-1">本を読む・人に会う・いろいろな人の話を聞く</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-smo-accent/5 border border-smo-accent/20 rounded-xl p-5">
+    <div class="flex items-start gap-3">
+      <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-smo-accent/10 flex-shrink-0 mt-0.5">
+        <i data-lucide="lightbulb" class="w-4 h-4 text-smo-accent"></i>
+      </div>
+      <div>
+        <p class="font-bold text-smo-accent mb-1">ここがポイント</p>
+        <p class="text-smo-muted leading-relaxed">
+          自分の視座の低さを認めたうえで、「自分にはまだ想像もつかないけれど、あの人はこういう世界観で考えているんだろうな」とイメージしながら、<strong class="text-smo-text">目の前の問題に愚直に向き合う</strong>。いわゆる「具体と抽象の行き来」を、階段を登るために意識して行うことが大切です。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!--  SECTION 5: 言われたときの対処                                 -->
+<!-- ============================================================ -->
+<section class="mb-16 md:mb-20">
+  <div class="text-center mb-10">
+    <p class="font-display text-sm font-bold text-smo-accent tracking-[0.25em] mb-2">05</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-smo-navy leading-snug mb-4">「視座が低い」と言われたら、どうするか</h2>
+    <div class="w-16 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto"></div>
+  </div>
+
+  <p class="mb-8 leading-relaxed">
+    レベルアップはすぐには起きません。では、言われたその場ではどう動けばいいのか。最初に押さえたいのは、<strong class="text-smo-text">上司の言う「視座」が、ここまでの定義と同じとは限らない</strong>ということです。
+  </p>
+
+  <p class="text-center text-sm font-bold text-smo-muted mb-5">＼ 上司の「視座が低い」が指しているかもしれないもの ／</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+    <div class="flex gap-4 bg-smo-surface border border-smo-border rounded-xl p-5">
+      <div class="w-10 h-10 rounded-lg bg-smo-accent/10 flex items-center justify-center flex-shrink-0">
+        <i data-lucide="layers" class="w-5 h-5 text-smo-accent"></i>
+      </div>
+      <div>
+        <h3 class="font-bold text-smo-navy mb-1">課題の抽象度</h3>
+        <p class="text-sm text-smo-muted leading-relaxed">ここまで説明してきた「いかに」の高さ</p>
+      </div>
+    </div>
+    <div class="flex gap-4 bg-smo-surface border border-smo-border rounded-xl p-5">
+      <div class="w-10 h-10 rounded-lg bg-smo-teal/15 flex items-center justify-center flex-shrink-0">
+        <i data-lucide="clock" class="w-5 h-5 text-smo-teal"></i>
+      </div>
+      <div>
+        <h3 class="font-bold text-smo-navy mb-1">時間軸</h3>
+        <p class="text-sm text-smo-muted leading-relaxed">「もっと先のことを考えろ」という意味</p>
+      </div>
+    </div>
+    <div class="flex gap-4 bg-smo-surface border border-smo-border rounded-xl p-5">
+      <div class="w-10 h-10 rounded-lg bg-smo-navy/10 flex items-center justify-center flex-shrink-0">
+        <i data-lucide="users" class="w-5 h-5 text-smo-navy"></i>
+      </div>
+      <div>
+        <h3 class="font-bold text-smo-navy mb-1">スコープ・関係者</h3>
+        <p class="text-sm text-smo-muted leading-relaxed">「他の部署やステークホルダーのことも考えろ」という意味</p>
+      </div>
+    </div>
+    <div class="flex gap-4 bg-smo-surface border border-smo-border rounded-xl p-5">
+      <div class="w-10 h-10 rounded-lg bg-smo-negative/10 flex items-center justify-center flex-shrink-0">
+        <i data-lucide="scan-search" class="w-5 h-5 text-smo-negative"></i>
+      </div>
+      <div>
+        <h3 class="font-bold text-smo-navy mb-1">そもそも考えきれていない</h3>
+        <p class="text-sm text-smo-muted leading-relaxed">視座以前に、打ち手の解像度が低く「何をやっているのかわからない」という意味</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 返し方の比較 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+    <div class="bg-smo-negative/10 border border-smo-negative/20 rounded-xl p-6">
+      <div class="inline-flex items-center gap-1.5 bg-smo-negative/10 text-smo-negative px-3 py-1 rounded-full text-xs font-bold mb-4">
+        <i data-lucide="x-circle" class="w-3.5 h-3.5"></i>
+        避けたい返し方
+      </div>
+      <div class="bg-white rounded-2xl rounded-bl-sm px-4 py-3 text-sm mb-3">「視座が低いって、どういうことですか？」</div>
+      <p class="text-xs text-smo-muted leading-relaxed">定義をまるごと相手に投げてしまう</p>
+    </div>
+    <div class="bg-smo-teal/10 border border-smo-teal/30 rounded-xl p-6">
+      <div class="inline-flex items-center gap-1.5 bg-smo-teal/15 text-smo-positive px-3 py-1 rounded-full text-xs font-bold mb-4">
+        <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+        おすすめの返し方
+      </div>
+      <div class="bg-white rounded-2xl rounded-bl-sm px-4 py-3 text-sm mb-3">「〇〇まで含めて考えろ、ということでしょうか？」</div>
+      <p class="text-xs text-smo-muted leading-relaxed">「たぶんここだろう」と想像して、提案の形で返しにいく</p>
+    </div>
+  </div>
+
+  <!-- 上下左右に広げる -->
+  <div class="bg-smo-surface border border-smo-border rounded-xl p-6 md:p-8 mb-8">
+    <h3 class="text-lg font-bold text-smo-text text-center mb-2">取り組みやすいアプローチ：上下左右に広げる</h3>
+    <p class="text-sm text-smo-muted text-center mb-8">自分の仕事を中心に、考える範囲を広げてみる</p>
+
+    <div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+      <div></div>
+      <div class="bg-smo-navy/10 rounded-xl p-3 text-center">
+        <i data-lucide="history" class="w-4 h-4 text-smo-navy mx-auto mb-1"></i>
+        <div class="text-xs font-bold text-smo-navy">背景</div>
+        <div class="text-[10px] text-smo-muted">そこに至った経緯</div>
+      </div>
+      <div></div>
+      <div class="bg-smo-accent/10 rounded-xl p-3 text-center">
+        <i data-lucide="arrow-left" class="w-4 h-4 text-smo-accent mx-auto mb-1"></i>
+        <div class="text-xs font-bold text-smo-navy">前工程</div>
+      </div>
+      <div class="bg-gradient-to-r from-smo-accent to-smo-teal rounded-xl p-3 text-center text-white flex flex-col items-center justify-center">
+        <i data-lucide="user" class="w-5 h-5 mb-1"></i>
+        <div class="text-xs font-bold">自分の仕事</div>
+      </div>
+      <div class="bg-smo-accent/10 rounded-xl p-3 text-center">
+        <i data-lucide="arrow-right" class="w-4 h-4 text-smo-accent mx-auto mb-1"></i>
+        <div class="text-xs font-bold text-smo-navy">後工程</div>
+      </div>
+      <div></div>
+      <div class="bg-smo-teal/15 rounded-xl p-3 text-center">
+        <i data-lucide="telescope" class="w-4 h-4 text-smo-teal mx-auto mb-1"></i>
+        <div class="text-xs font-bold text-smo-navy">その後の未来</div>
+        <div class="text-[10px] text-smo-muted">時間軸を伸ばす</div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="bg-smo-accent/5 border border-smo-accent/20 rounded-xl p-5">
+    <div class="flex items-start gap-3">
+      <div class="flex items-center justify-center w-8 h-8 rounded-lg bg-smo-accent/10 flex-shrink-0 mt-0.5">
+        <i data-lucide="lightbulb" class="w-4 h-4 text-smo-accent"></i>
+      </div>
+      <div>
+        <p class="font-bold text-smo-accent mb-1">言葉にこだわり、言葉にとらわれない</p>
+        <p class="text-smo-muted leading-relaxed">
+          目的は「視座を上げること」そのものではありません。<strong class="text-smo-text">「視座が低い」と指摘されている、何らかの問題がある状態を乗り越えること</strong>です。「結局、どういう状態になればいいのか」から分解して、そこをクリアしにいきましょう。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!--  SECTION 6: いかにを書き出す                                   -->
+<!-- ============================================================ -->
+<section class="mb-16 md:mb-20">
+  <div class="text-center mb-10">
+    <p class="font-display text-sm font-bold text-smo-accent tracking-[0.25em] mb-2">06</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-smo-navy leading-snug mb-4">まずは「いかに」を書き出してみる</h2>
+    <div class="w-16 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto"></div>
+  </div>
+
+  <p class="mb-8 leading-relaxed">
+    すぐに試せるのが、自分の「いかに」と上司の「いかに」を並べて書き出すことです。<strong class="text-smo-text">「いかに〇〇するか？」の文型にそろえて書く</strong>と、ずれが目に見えやすくなります。
+  </p>
+
+  <!-- ワークシートUI -->
+  <div class="max-w-3xl mx-auto rounded-xl overflow-hidden border border-smo-border bg-white mb-8">
+    <div class="flex items-center gap-3 bg-smo-band px-4 py-2.5 border-b border-smo-border">
+      <div class="flex gap-1.5">
+        <div class="w-3 h-3 rounded-full bg-red-400/80"></div>
+        <div class="w-3 h-3 rounded-full bg-yellow-400/80"></div>
+        <div class="w-3 h-3 rounded-full bg-green-400/80"></div>
+      </div>
+      <div class="flex items-center gap-1.5 text-xs text-smo-muted">
+        <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+        いかに書き出しメモ
+      </div>
+    </div>
+    <div class="p-5 md:p-6 space-y-4">
+      <div>
+        <div class="text-xs font-bold text-smo-accent mb-1.5">自分が今捉えている「いかに」</div>
+        <div class="border border-smo-border rounded-lg px-4 py-3 text-sm bg-smo-bg">いかに <span class="inline-block border-b border-dashed border-smo-dim w-48 align-bottom"></span> するか？</div>
+      </div>
+      <div>
+        <div class="text-xs font-bold text-smo-navy mb-1.5">上司が今向かっている「いかに」</div>
+        <div class="border border-smo-border rounded-lg px-4 py-3 text-sm bg-smo-bg">いかに <span class="inline-block border-b border-dashed border-smo-dim w-48 align-bottom"></span> するか？</div>
+      </div>
+      <div class="flex items-center gap-2 pt-3 border-t border-smo-border text-xs text-smo-muted">
+        <i data-lucide="git-compare" class="w-4 h-4 text-smo-teal flex-shrink-0"></i>
+        2つを見比べて、どの段にずれがあるかを確認する
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!--  まとめ                                                       -->
+<!-- ============================================================ -->
+<section class="bg-smo-band rounded-2xl p-6 md:p-10">
+  <div class="text-center mb-8">
+    <p class="font-display text-sm font-bold text-smo-accent tracking-[0.25em] mb-2">SUMMARY</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-smo-navy leading-snug mb-4">まとめ</h2>
+    <div class="w-16 h-1 rounded-full bg-gradient-to-r from-smo-accent to-smo-teal mx-auto"></div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-4xl mx-auto">
+    <div class="flex items-start gap-3 bg-white rounded-xl p-4">
+      <div class="w-7 h-7 rounded-full bg-smo-accent text-white text-xs font-bold flex items-center justify-center flex-shrink-0">1</div>
+      <p class="text-sm leading-relaxed">視座とは、<strong>自分が解こうとしている課題（いかに〇〇するか？）の抽象度の高さ</strong></p>
+    </div>
+    <div class="flex items-start gap-3 bg-white rounded-xl p-4">
+      <div class="w-7 h-7 rounded-full bg-smo-teal text-white text-xs font-bold flex items-center justify-center flex-shrink-0">2</div>
+      <p class="text-sm leading-relaxed">「いかにの階段」は一足飛びに登れない。<strong>目の前の課題で成果を出す経験</strong>が次の段を見せてくれる</p>
+    </div>
+    <div class="flex items-start gap-3 bg-white rounded-xl p-4">
+      <div class="w-7 h-7 rounded-full bg-smo-navy text-white text-xs font-bold flex items-center justify-center flex-shrink-0">3</div>
+      <p class="text-sm leading-relaxed"><strong>ちまちま（具体）とふわふわ（抽象）</strong>の両方を行き来する</p>
+    </div>
+    <div class="flex items-start gap-3 bg-white rounded-xl p-4">
+      <div class="w-7 h-7 rounded-full bg-smo-accent text-white text-xs font-bold flex items-center justify-center flex-shrink-0">4</div>
+      <p class="text-sm leading-relaxed">言われたら、上司の「視座」の意味を<strong>想像して提案の形で確かめにいく</strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTENT_END -->
+  </main>
+  <footer class="bg-gradient-to-r from-smo-accent to-smo-teal">
+    <div class="max-w-6xl mx-auto px-5 py-10">
+      <p class="text-xs text-white/70 text-center">図解ツールで作成</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
