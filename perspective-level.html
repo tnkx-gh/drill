@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta property="og:title" content="「視座を高く」の正体と、視座を上げる方法">
+  <meta property="og:description" content="視座を「解こうとしている課題の抽象度の高さ」として捉え直し、課題の階段を一段ずつ上がる方法と、「視座が低い」と言われたときの向き合い方を図解します。">
+  <meta property="og:type" content="article">
+  <title>「視座を高く」の正体と、視座を上げる方法</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231A1A1A'/><rect x='24' y='30' width='52' height='34' rx='5' fill='%23FFFFFF'/><rect x='32' y='39' width='26' height='4' rx='2' fill='%232F74E0'/><rect x='32' y='48' width='36' height='4' rx='2' fill='%23BDBDBD'/><rect x='42' y='68' width='16' height='4' rx='2' fill='%23FFFFFF'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            drl: {
+              page: '#F4F4F5',
+              card: '#FFFFFF',
+              border: '#E4E4E7',
+              ink: '#1A1A1A',
+              text: '#262626',
+              muted: '#5F6368',
+              dim: '#8A8F98',
+              dark: '#3F3F46',
+              main: '#2F74E0',
+              tint: '#DCE7FA',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', '"Hiragino Sans"', '"Hiragino Kaku Gothic ProN"', '"Yu Gothic UI"', '"Meiryo"', 'sans-serif'],
+            display: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media print {
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .no-print { display: none !important; }
+      .rounded-lg, .rounded-xl { break-inside: avoid; }
+      .md\:flex-row { flex-direction: row !important; }
+      .md\:hidden { display: none !important; }
+      .hidden.md\:block { display: block !important; }
+      .hidden.md\:flex { display: flex !important; }
+      .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+      .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+      .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+    }
+  </style>
+</head>
+<body class="bg-drl-page text-drl-text antialiased leading-relaxed">
+  <header class="no-print bg-white border-b border-drl-border">
+    <div class="max-w-5xl mx-auto px-5 h-12 flex items-center justify-end">
+      <button onclick="window.print()" class="flex items-center gap-1.5 text-xs text-drl-muted hover:text-drl-main transition-colors cursor-pointer">
+        <i data-lucide="download" class="w-3.5 h-3.5"></i>
+        PDF
+      </button>
+    </div>
+  </header>
+  <main>
+<!-- CONTENT_START -->
+
+    <!-- 表紙。写真: output/images/perspective-cover.jpg を置くと背景に表示される -->
+    <section class="relative bg-drl-dark bg-cover bg-center bg-[url('images/perspective-cover.jpg')]">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative max-w-5xl mx-auto px-5 py-24 md:py-32 text-center text-white">
+        <p class="text-sm md:text-base font-bold text-white/90">抽象的な言葉の正体と、一段ずつ上がる方法</p>
+        <h1 class="mt-4 text-3xl md:text-5xl font-bold leading-tight">「視座を高く」とは何か</h1>
+        <p class="mt-10 text-xs text-white/70">出典: <a href="https://www.youtube.com/watch?v=Tg9bcCYPuto" class="underline hover:text-white">「視座を高く」とは何か？抽象的すぎる言葉の正体と視座を上げる方法（しごおもTV）</a></p>
+      </div>
+    </section>
+
+    <!-- 動画で見る（約76秒）。動画ファイルはこのHTMLと同じフォルダに置く -->
+    <section class="py-12 md:py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-5">
+        <p class="text-center text-sm font-bold text-drl-dim">まずは動画で全体をつかむ（約76秒）</p>
+        <video class="mt-4 w-full rounded-lg shadow-sm bg-drl-dark" src="perspective-video.mp4" controls preload="metadata" playsinline></video>
+        <p class="mt-3 text-center text-xs text-drl-dim">ナレーション：AivisSpeech（kokuren_3rd）　／　BGM・効果音：オリジナル</p>
+      </div>
+    </section>
+
+    <!-- この資料のポイント：3つとも「問い → 答え」の同じ形に揃える -->
+    <section class="py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">この資料のポイント</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">「もっと視座を上げて」と言われたときの疑問に、3つの答えで整理します。</p>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <div class="bg-drl-card rounded-lg shadow-sm p-6">
+            <p class="text-sm font-bold text-drl-dim">Q. 視座とは？</p>
+            <p class="mt-3 text-xl font-bold text-drl-main">解こうとしている課題の高さ</p>
+            <p class="mt-3 text-sm text-drl-muted">同じ仕事でも、どの高さの課題として捉えるかで変わる</p>
+          </div>
+          <div class="bg-drl-card rounded-lg shadow-sm p-6">
+            <p class="text-sm font-bold text-drl-dim">Q. どうすれば上がる？</p>
+            <p class="mt-3 text-xl font-bold text-drl-main">足元を解きながら、一段上を想像する</p>
+            <p class="mt-3 text-sm text-drl-muted">一足飛びには上がれず、一段ずつ上がっていく</p>
+          </div>
+          <div class="bg-drl-card rounded-lg shadow-sm p-6">
+            <p class="text-sm font-bold text-drl-dim">Q. 「低い」と言われたら？</p>
+            <p class="mt-3 text-xl font-bold text-drl-main">上司の意図を仮説で確かめる</p>
+            <p class="mt-3 text-sm text-drl-muted">視座を上げることより、指摘された問題を乗り越えることが目的</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 視座とは何か -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">01. 視座とは何か</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">視座とは、<span class="font-bold text-drl-ink">解こうとしている課題の<span class="text-drl-main">抽象度の高さ</span></span>のことです。</p>
+
+        <div class="mt-10 grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <p class="text-sm font-bold text-drl-ink">ここでいう「課題」とは</p>
+            <div class="mt-3 bg-drl-page rounded-lg p-6">
+              <p class="text-lg font-bold text-drl-ink">「いかに〇〇するか？」と書ける問い</p>
+              <p class="mt-3 text-sm text-drl-muted">ありたい姿と現状とのギャップを、どう埋めるかという問いのことです。</p>
+              <div class="mt-5 flex items-center gap-2 text-sm">
+                <span class="bg-white rounded px-3 py-1.5 text-drl-ink">現状</span>
+                <span class="flex-1 border-t border-dashed border-drl-dim"></span>
+                <span class="text-xs text-drl-muted">この間を埋める問い</span>
+                <span class="flex-1 border-t border-dashed border-drl-dim"></span>
+                <span class="bg-white rounded px-3 py-1.5 text-drl-ink">ありたい姿</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-sm font-bold text-drl-ink">例えば、「AIで業務を改善して」と頼まれたとき</p>
+            <p class="mt-1 text-xs text-drl-muted">同じ依頼でも、立てる問いの高さは人によって違います。</p>
+            <div class="mt-3 flex gap-3">
+              <div class="flex flex-col items-center py-1">
+                <span class="text-xs text-drl-dim">高い</span>
+                <div class="flex-1 my-1 border-l-2 border-drl-dim"></div>
+                <span class="text-xs text-drl-dim">低い</span>
+              </div>
+              <div class="flex-1 space-y-2">
+                <div class="bg-white border border-drl-border rounded-lg p-4">
+                  <p class="text-xs text-drl-dim">経営の高さ</p>
+                  <p class="mt-1 text-sm font-bold text-drl-ink">いかに経営からの要請に応え、組織をあるべき姿に近づけるか？</p>
+                </div>
+                <div class="bg-white border border-drl-border rounded-lg p-4">
+                  <p class="text-xs text-drl-dim">マネジメントの高さ</p>
+                  <p class="mt-1 text-sm font-bold text-drl-ink">いかに部署全体の仕事の進め方を変えるか？</p>
+                </div>
+                <div class="bg-white border border-drl-border rounded-lg p-4">
+                  <p class="text-xs text-drl-dim">目の前の作業の高さ</p>
+                  <p class="mt-1 text-sm font-bold text-drl-ink">いかに自分の資料作成を速くするか？</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 視座が低いと言われる場面：同じ観点の行で左右を揃える -->
+    <section class="py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">02. 「視座が低い」と言われる場面</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">例えば「AIで業務を改善して」と頼まれ、自分の資料作成をAIで速くして報告したところ、「そういうことじゃない」と言われたとします。</p>
+
+        <div class="mt-10 bg-drl-card rounded-lg shadow-sm overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-drl-border">
+                <th class="p-3 md:p-4"></th>
+                <th class="p-3 md:p-4 text-left font-bold text-drl-muted">視座が低い受け取り方</th>
+                <th class="p-3 md:p-4 text-left font-bold text-drl-main">上司が期待していた受け取り方</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-drl-border">
+                <th class="p-3 md:p-4 text-left text-xs font-bold text-drl-dim align-top whitespace-nowrap">立てた問い</th>
+                <td class="p-3 md:p-4 align-top">いかに自分の資料作成を速くするか？</td>
+                <td class="p-3 md:p-4 align-top font-bold text-drl-ink">いかに部署の仕事を、あるべき姿に近づけるか？</td>
+              </tr>
+              <tr class="border-b border-drl-border">
+                <th class="p-3 md:p-4 text-left text-xs font-bold text-drl-dim align-top whitespace-nowrap">見ている範囲</th>
+                <td class="p-3 md:p-4 align-top">自分の手元の作業</td>
+                <td class="p-3 md:p-4 align-top font-bold text-drl-ink">部署のミッション、人件費、経営からの要請</td>
+              </tr>
+              <tr>
+                <th class="p-3 md:p-4 text-left text-xs font-bold text-drl-dim align-top whitespace-nowrap">やったこと</th>
+                <td class="p-3 md:p-4 align-top">資料作成にAIを使えるようにした</td>
+                <td class="p-3 md:p-4 align-top font-bold text-drl-ink">依頼を捉え直し、あるべき姿への段取りを描いてから、AIの使いどころを決める</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="mt-10 text-center text-xl md:text-2xl font-bold text-drl-ink leading-snug">差がついたのは作業の上手さではなく、<br class="hidden md:block"><span class="text-drl-main">最初に立てた問いの高さ</span>です。</p>
+      </div>
+    </section>
+
+    <!-- 03 いかにの階段：段の位置で高さを表し、色は使わない -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">03. 「いかに」の階段</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">課題の高さは、階段のように一段ずつ積み上がっています。</p>
+
+        <p class="mt-10 text-sm font-bold text-drl-ink">例えば、デジタル広告の仕事なら</p>
+        <div class="mt-3 space-y-2">
+          <div class="md:ml-[40%] flex items-center gap-4 bg-white border border-drl-border rounded-lg px-5 py-3">
+            <span class="font-display text-lg font-bold text-drl-dim">05</span>
+            <div><p class="text-xs text-drl-dim">経営</p><p class="font-bold text-drl-ink">いかに長期的に利益を生み出し続けるか？</p></div>
+          </div>
+          <div class="md:ml-[30%] flex items-center gap-4 bg-white border border-drl-border rounded-lg px-5 py-3">
+            <span class="font-display text-lg font-bold text-drl-dim">04</span>
+            <div><p class="text-xs text-drl-dim">売上</p><p class="font-bold text-drl-ink">いかに売上を上げるか？</p></div>
+          </div>
+          <div class="md:ml-[20%] flex items-center gap-4 bg-white border border-drl-border rounded-lg px-5 py-3">
+            <span class="font-display text-lg font-bold text-drl-dim">03</span>
+            <div><p class="text-xs text-drl-dim">プロモーション全体</p><p class="font-bold text-drl-ink">いかにオフラインも含めた販促全体の成果を上げるか？</p></div>
+          </div>
+          <div class="md:ml-[10%] flex items-center gap-4 bg-white border border-drl-border rounded-lg px-5 py-3">
+            <span class="font-display text-lg font-bold text-drl-dim">02</span>
+            <div><p class="text-xs text-drl-dim">デジタルマーケティング</p><p class="font-bold text-drl-ink">いかにデジタル施策全体の成果を上げるか？</p></div>
+          </div>
+          <div class="md:mr-[40%] flex items-center gap-4 bg-white border border-drl-border rounded-lg px-5 py-3">
+            <span class="font-display text-lg font-bold text-drl-dim">01</span>
+            <div><p class="text-xs text-drl-dim">リスティング広告</p><p class="font-bold text-drl-ink">いかにリスティング広告のCPAを下げるか？</p></div>
+          </div>
+        </div>
+        <p class="mt-3 text-xs text-drl-dim">CPA：顧客1人の獲得にかかる広告費</p>
+
+        <div class="mt-10 bg-drl-page rounded-lg p-6 md:p-8">
+          <p class="text-center text-xl md:text-2xl font-bold text-drl-ink">この階段は、<span class="text-drl-main">一足飛びには上がれません。</span></p>
+          <p class="mt-4 text-center text-sm text-drl-muted">例えば、CPAの改善にしか向き合ったことのない人が、急に「長期的な利益の生み出し方」を語っても説得力がありません。<br class="hidden md:block">いまいる段の課題で成果を出すことが、次の段への入口になります。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 視座はどうやって上がるか：2つの行動 → 結果、の因果 -->
+    <section class="py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">04. 視座はどうやって上がるか</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">2つのことを同時に続けていると、ある瞬間に一段上がります。</p>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center">
+          <div class="space-y-3">
+            <div class="bg-drl-card rounded-lg shadow-sm p-5">
+              <p class="text-xs font-bold text-drl-dim">足元で</p>
+              <p class="mt-1 font-bold text-drl-ink">目の前の「いかに」に向き合い、工夫して成果を出す</p>
+            </div>
+            <p class="text-center text-lg font-bold text-drl-dim">＋</p>
+            <div class="bg-drl-card rounded-lg shadow-sm p-5">
+              <p class="text-xs font-bold text-drl-dim">頭の中で</p>
+              <p class="mt-1 font-bold text-drl-ink">一段上にどんな「いかに」があるかを想像する</p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <i data-lucide="arrow-big-right" class="hidden md:block w-12 h-12 text-drl-dark fill-drl-dark"></i>
+            <i data-lucide="arrow-big-down" class="md:hidden w-10 h-10 text-drl-dark fill-drl-dark"></i>
+          </div>
+          <div class="bg-drl-card rounded-lg shadow-sm p-6 border-2 border-drl-main">
+            <p class="text-xs font-bold text-drl-main">すると、ある瞬間に気づく</p>
+            <p class="mt-2 text-lg font-bold text-drl-ink">「これは小手先では？<br>もっと本質から考えるべきでは」</p>
+            <p class="mt-3 text-sm text-drl-muted">この気づきが、一段上がった瞬間です。</p>
+          </div>
+        </div>
+
+        <div class="mt-8 bg-drl-page rounded-lg p-6">
+          <p class="text-sm font-bold text-drl-ink">例えば</p>
+          <p class="mt-2 text-sm text-drl-text">リスティング広告のCPAを下げようと、広告文の改善を重ねていた人が、「広告だけを直しても限界がある。ほかの施策も含めて考えるべきでは」と気づく。これが、階段の1段目から2段目に上がる瞬間です。</p>
+        </div>
+
+        <!-- 遠回りと近道：同じ観点で並べる比較なので矢印は使わない -->
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+          <div class="bg-drl-card rounded-lg shadow-sm p-6">
+            <p class="text-sm font-bold text-drl-muted">よくある遠回り</p>
+            <p class="mt-2 font-bold text-drl-ink">本から借りた言葉で、上の段を語る</p>
+            <p class="mt-3 text-sm text-drl-muted">例えば、1段目の課題しか解いていないのに、経営書を読んで「うちの会社は戦略がなっていない」と語ってしまう。</p>
+          </div>
+          <div class="bg-drl-card rounded-lg shadow-sm p-6">
+            <p class="text-sm font-bold text-drl-main">近道</p>
+            <p class="mt-2 font-bold text-drl-ink">足元で出した成果をもとに、上の段を語る</p>
+            <p class="mt-3 text-sm text-drl-muted">上の段は、自分で解いた経験の上にしか語れません。まずは目の前の課題で成果を出します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 ちまちまの世界とふわふわの世界：左右とも同じ3行で揃える -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">05. 「ちまちまの世界」と「ふわふわの世界」</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">04の「足元」と「頭の中」は、2つの世界と言い換えられます。どちらか一方にとどまると、上がれません。</p>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-stretch">
+          <div class="bg-drl-page rounded-lg p-6">
+            <p class="text-lg font-bold text-drl-ink">ちまちまの世界</p>
+            <dl class="mt-4 space-y-4 text-sm">
+              <div>
+                <dt class="text-xs font-bold text-drl-dim">どんな世界か</dt>
+                <dd class="mt-1">具体の世界。いま目に見えている仕事だけを考える</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold text-drl-dim">ここだけにいると（例えば）</dt>
+                <dd class="mt-1">マーケティング全体を議論している場で、今日入稿する広告文の話をしてしまう</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold text-drl-dim">ここでやること</dt>
+                <dd class="mt-1 font-bold text-drl-ink">期待されている成果を、愚直に出す</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-1">
+            <i data-lucide="arrow-left-right" class="hidden md:block w-9 h-9 text-drl-main"></i>
+            <i data-lucide="arrow-up-down" class="md:hidden w-8 h-8 text-drl-main"></i>
+            <p class="text-sm font-bold text-drl-main">行き来する</p>
+          </div>
+          <div class="bg-drl-page rounded-lg p-6">
+            <p class="text-lg font-bold text-drl-ink">ふわふわの世界</p>
+            <dl class="mt-4 space-y-4 text-sm">
+              <div>
+                <dt class="text-xs font-bold text-drl-dim">どんな世界か</dt>
+                <dd class="mt-1">抽象の世界。まだ具体になっていない未来や全体像を考える</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold text-drl-dim">ここだけにいると（例えば）</dt>
+                <dd class="mt-1">経験が伴わないまま、人から借りた言葉でマーケティングを語ってしまう</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold text-drl-dim">ここでやること</dt>
+                <dd class="mt-1 font-bold text-drl-ink">本を読む、人に会って話を聞き、一段上を想像する</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 視座が低いと言われたら：視座の話3つと、視座以前の話1つを分けて並べる -->
+    <section class="py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">06. 「視座が低い」と言われたら</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">上司の言う「視座が低い」が何を指しているかは、人によって違います。まず見極めます。</p>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-6">
+          <div>
+            <p class="text-sm font-bold text-drl-ink">視座の話</p>
+            <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="bg-drl-card rounded-lg shadow-sm p-5">
+                <i data-lucide="layers" class="w-7 h-7 text-drl-ink"></i>
+                <p class="mt-3 font-bold text-drl-ink">課題の高さ</p>
+                <p class="mt-2 text-xs text-drl-dim">例えば、こう言われる</p>
+                <p class="mt-1 text-sm">「もっと上の目的から考えて」</p>
+              </div>
+              <div class="bg-drl-card rounded-lg shadow-sm p-5">
+                <i data-lucide="network" class="w-7 h-7 text-drl-ink"></i>
+                <p class="mt-3 font-bold text-drl-ink">見ている範囲</p>
+                <p class="mt-2 text-xs text-drl-dim">例えば、こう言われる</p>
+                <p class="mt-1 text-sm">「他部署や前後の工程まで考えて」</p>
+              </div>
+              <div class="bg-drl-card rounded-lg shadow-sm p-5">
+                <i data-lucide="calendar-range" class="w-7 h-7 text-drl-ink"></i>
+                <p class="mt-3 font-bold text-drl-ink">時間軸の長さ</p>
+                <p class="mt-2 text-xs text-drl-dim">例えば、こう言われる</p>
+                <p class="mt-1 text-sm">「もっと先のことまで考えて」</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-drl-ink">実は、視座以前の話</p>
+            <div class="mt-3 bg-drl-card rounded-lg shadow-sm p-5 h-[calc(100%-2rem)]">
+              <i data-lucide="scan-search" class="w-7 h-7 text-drl-ink"></i>
+              <p class="mt-3 font-bold text-drl-ink">打ち手の解像度</p>
+              <p class="mt-2 text-xs text-drl-dim">例えば、こう言われる</p>
+              <p class="mt-1 text-sm">「そもそも何をしたいのかが見えない」</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 確かめ方：2つのやり方の比較なので矢印は使わない -->
+        <p class="mt-12 text-sm font-bold text-drl-ink">どれを指しているかの確かめ方</p>
+        <div class="mt-3 grid md:grid-cols-2 gap-6">
+          <div class="bg-drl-card rounded-lg shadow-sm p-6">
+            <p class="text-sm font-bold text-drl-muted">意味をそのまま聞き返す</p>
+            <p class="mt-2 text-drl-ink">「視座が低いって、どういうことですか？」</p>
+          </div>
+          <div class="bg-drl-card rounded-lg shadow-sm p-6">
+            <p class="text-sm font-bold text-drl-main">自分なりの仮説で返す（おすすめ）</p>
+            <p class="mt-2 font-bold text-drl-ink">「部署全体の人件費まで踏まえて、提案し直すということでしょうか？」</p>
+          </div>
+        </div>
+
+        <p class="mt-12 text-center text-xl md:text-2xl font-bold text-drl-ink leading-snug">目的は視座を上げることではなく、<br class="hidden md:block"><span class="text-drl-main">指摘された問題を乗り越えること</span>です。</p>
+      </div>
+    </section>
+
+    <!-- 07 今日からできること：03の階段と結びつける -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="border-b-2 border-drl-ink pb-3">
+          <h2 class="text-xl md:text-2xl font-bold text-drl-ink">07. 今日からできること</h2>
+        </div>
+        <p class="mt-8 text-center text-drl-muted md:text-lg">自分と上司の「いかに」を、同じ形で書き出して並べてみましょう。</p>
+
+        <div class="mt-10 space-y-3">
+          <div class="bg-drl-page rounded-lg p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
+            <p class="md:w-40 shrink-0 text-sm font-bold text-drl-ink">自分の課題</p>
+            <p class="flex-1 font-bold text-drl-ink">いかに<span class="mx-1 border-b-2 border-dashed border-drl-dim px-1 font-normal text-drl-muted">リスティング広告のCPAを下げ</span>るか？</p>
+            <span class="shrink-0 self-start md:self-auto bg-white rounded px-3 py-1 text-xs text-drl-muted">階段の1段目</span>
+          </div>
+          <div class="bg-drl-page rounded-lg p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
+            <p class="md:w-40 shrink-0 text-sm font-bold text-drl-ink">上司の課題</p>
+            <p class="flex-1 font-bold text-drl-ink">いかに<span class="mx-1 border-b-2 border-dashed border-drl-dim px-1 font-normal text-drl-muted">デジタル施策全体の成果を上げ</span>るか？</p>
+            <span class="shrink-0 self-start md:self-auto bg-white rounded px-3 py-1 text-xs text-drl-muted">階段の2段目</span>
+          </div>
+        </div>
+        <p class="mt-3 text-xs text-drl-dim">点線部分は記入例です。</p>
+
+        <p class="mt-10 text-center text-sm text-drl-muted">例えばこのように、自分は1段目、上司は2段目を見ていたとわかれば、<br class="hidden md:block"><span class="font-bold text-drl-ink">次に考えるべき「いかに」</span>が見えてきます。</p>
+      </div>
+    </section>
+
+<!-- CONTENT_END -->
+  </main>
+  <footer class="bg-white border-t border-drl-border">
+    <div class="max-w-5xl mx-auto px-5 py-6">
+      <p class="text-xs text-drl-dim">資料ツールで作成</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
